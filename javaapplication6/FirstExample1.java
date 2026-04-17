@@ -7,7 +7,7 @@ public class FirstExample1 {
 
     // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    static final String DB_NAME = "voting_management";
+    static final String DB_NAME = "voting_dbms";
 
     public static void main(String[] args) {
 
@@ -33,7 +33,7 @@ public class FirstExample1 {
             stmt.close();
             conn.close();
 
-            // STEP 4: Connect to voting_management database
+            // STEP 4: Connect to voting_dbms database
             System.out.println("Connecting to " + DB_NAME + " database...");
             conn = DriverManager.getConnection(cred.databaseUrl(), cred.user, cred.pass);
 
